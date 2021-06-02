@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFC107">
+    android:background="#EFE37B">
 
     <TextView
         android:id="@+id/tvtype"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="TextView"
+        android:textColor="#0B0A0A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toEndOf="@+id/tvcount"
@@ -21,12 +22,14 @@
         android:id="@+id/tvcount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:text="TextView"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.494" />
 
     <TextView
         android:id="@+id/tvprice"
@@ -34,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="TextView"
+        android:textColor="#070707"
         app:layout_constraintEnd_toEndOf="@+id/tvtype"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvtype"
@@ -45,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="TextView"
+        android:textColor="#090909"
         app:layout_constraintEnd_toEndOf="@+id/tvprice"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvprice"
@@ -74,4 +79,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnupdate"
         app:layout_constraintTop_toBottomOf="@+id/btnupdate" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="401dp"
+        android:layout_height="7dp"
+        android:background="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcountry"
+        app:layout_constraintVertical_bias="0.018"
+        tools:layout_editor_absoluteX="4dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
