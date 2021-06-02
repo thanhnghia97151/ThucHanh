@@ -55,7 +55,7 @@ public class MainShowProduct extends AppCompatActivity {
                                 for(int i=0; i<response.length(); i++){
                                     try {
                                         JSONObject object = (JSONObject) response.get(i);
-                                        arr.add(new Product(""+i+1,
+                                        arr.add(new Product(""+object.getString("id").toString(),
                                                             "Type: "+object.getString("type").toString(),
                                                             "Price: "+object.getString("price").toString(),
                                                                     "Country: "+object.getString("country").toString()

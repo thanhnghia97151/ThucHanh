@@ -1,6 +1,7 @@
 package com.example.products;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,21 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         holder.tvtype.setText(product.getType());
         holder.tvprice.setText(product.getPrice());
         holder.tvcountry.setText(product.getCountry());
+        holder.btndelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ctx,MainDelete.class);
+                intent.putExtra("id_delete",product.getId());
+                ctx.startActivity(intent);
+            }
+        });
+        holder.btnupdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(ctx,MainUpdate.class);
+                ctx.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -55,6 +71,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             tvtype = itemView.findViewById(R.id.tvtype);
             tvcountry = itemView.findViewById(R.id.tvcountry);
             tvprice = itemView.findViewById(R.id.tvprice);
+
+            btndelete = itemView.findViewById(R.id.btndelete);
+            btnupdate = itemView.findViewById(R.id.btnupdate);
+
 
             this.adapter=adt;
         }
