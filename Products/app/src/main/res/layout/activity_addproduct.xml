@@ -20,42 +20,48 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editcreatetype"
         android:layout_width="363dp"
         android:layout_height="61dp"
         android:layout_marginTop="80dp"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:ems="10"
+        android:hint="Type"
         android:inputType="textPersonName"
+        android:text="Guitar Cordoba Fusion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editcreateprice"
         android:layout_width="358dp"
         android:layout_height="58dp"
         android:layout_marginTop="12dp"
         android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
         android:ems="10"
+        android:hint="Price"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        android:text="1000$"
+        app:layout_constraintEnd_toEndOf="@+id/editcreatetype"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/editcreatetype"
+        app:layout_constraintTop_toBottomOf="@+id/editcreatetype" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/editcreatecountry"
         android:layout_width="357dp"
         android:layout_height="54dp"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/ic_baseline_place_24"
         android:ems="10"
+        android:hint="Country"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        android:text="America"
+        app:layout_constraintEnd_toEndOf="@+id/editcreateprice"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="@+id/editcreateprice"
+        app:layout_constraintTop_toBottomOf="@+id/editcreateprice" />
 
     <Button
         android:id="@+id/btncreate"
@@ -67,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/editcreatecountry" />
 
     <Button
         android:id="@+id/btnupdatetomanager"
