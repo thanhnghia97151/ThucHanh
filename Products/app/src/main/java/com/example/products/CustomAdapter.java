@@ -51,6 +51,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(ctx,MainUpdate.class);
+                intent.putExtra("id_update",product.getId());
+                intent.putExtra("type",product.getType());
+                intent.putExtra("price",product.getPrice());
+                intent.putExtra("country",product.getCountry());
                 ctx.startActivity(intent);
             }
         });
